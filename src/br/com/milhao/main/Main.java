@@ -4,7 +4,6 @@ import br.com.milhao.game.Jogo;
 import br.com.milhao.game.Ranking;
 import br.com.milhao.model.Pergunta;
 import br.com.milhao.utils.GerenciadorDeArquivos;
-
 import java.util.List;
 import java.util.Scanner;
 
@@ -14,7 +13,6 @@ public class Main {
         GerenciadorDeArquivos gerenciador = new GerenciadorDeArquivos();
         Ranking ranking = new Ranking();
 
-        // Carrega as perguntas do arquivo
         List<Pergunta> perguntas = gerenciador.carregarPerguntas("perguntas.csv");
         if (perguntas.isEmpty()) {
             System.out.println("Não foi possível carregar as perguntas. O jogo não pode começar.");
